@@ -12,6 +12,7 @@ import PenNib from './PenNib.astro';
         <span class="word-part">Word</span><span class="sprint-part">Sprint</span>
       </h1>
     </div>
+    <p class="tagline">Make every word count.</p>
   </div>
 </header>
 
@@ -36,6 +37,8 @@ import PenNib from './PenNib.astro';
   position: relative;
   z-index: 1;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .site-title {
@@ -50,6 +53,11 @@ import PenNib from './PenNib.astro';
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.tagline {
+  margin: 0.75rem 0 0;
+  color: #c8cfe0;
+  font-style: italic;
 }
 .word-part {
   background: linear-gradient(135deg, #e8e8f0 0%, #c8cfe0 100%);
