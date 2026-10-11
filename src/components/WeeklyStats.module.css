@@ -1,0 +1,65 @@
+.stats {
+  margin: 2.5rem auto 0;
+  max-width: 52rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  color: #e8c87a;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.chart {
+  display: grid;
+  gap: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.day {
+  color: #e2e8f0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.barTrack {
+  min-width: 0;
+  border-left: 2px solid #e2e8f0;
+}
+
+.bar {
+  display: flex;
+  min-width: 3.5rem;
+  max-width: 100%;
+  min-height: 2.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.75rem;
+  background-color: #e8c87a;
+  color: #fff;
+}
+
+.value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+
+  .day {
+    font-size: 0.875rem;
+  }
+}

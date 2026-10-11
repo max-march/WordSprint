@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import WordCountInput from '../components/WordCountInput'
+import DailyStreak from '../components/DailyStreak'
+import WeeklyStats from '../components/WeeklyStats'
 ---
 
 <BaseLayout title="WordSprint — Track Your Daily Writing">
   <WordCountInput client:load />
+  <DailyStreak client:load />
+  <WeeklyStats client:load />
 </BaseLayout>

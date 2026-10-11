@@ -6,3 +6,28 @@ can you add a small tagline beneath the site title ? you can choose what is says
 Lets buiuld out the react island component so its an input, with a label above it asking how many words the user has written today, SUbmitting the form (hitting enter) should fire a callback to just log the number to the console for now, and clear the input field afterwards. Keep the styles consistent with the rest of the site. Use a CSS module to style the component
 
 
+shell mode !
+git add .
+git commit -m "create word input"
+
+
+
+Can you make a new react component called WeeklyStats, which should just be a bare component for now with only a title of 'weekly writing stats'. Setup the CSS for the compnent top, giving it some and central alignment.Then import the component into the homepage and add it below the work count input
+
+
+/src
+save the wordcount to local storage when submitted. its should save the wordcount as in object isnide an array, where each day has its own object. The object should have a date property, which should be today's date, and a wordcount property, which is the number of words they submitted. If todays date is already present on an object , then dont add a new one just replace the word count of the object with todays date
+
+
+
+Need to build similar chart in @src\components\WeeklyS
+tats.tsx so that it looks like the attached chart image. You should
+pull 7 most recent days out of the local storage.If there are days
+not present just use 0 for thise days on the chart for the word
+count. Put the most recent day at the top, and also refetch the data
+whenever the wordcountinput form gets submitted.
+
+Plan mode
+Create a plan for a daily streak feature.It Should be a self-contained component called Daily Streak, which is rendered above the weekly stats component. It should show how many consecutive days a user has written for (where their word count is greater than 0).Use local storage to find this out.Also use a star icon and style it o match the rest of the site.
+
+

@@ -1,12 +1,16 @@
 import { useState, type FormEvent } from "react"
 import styles from "./WordCountInput.module.css"
+import { saveWordCount, WORD_COUNTS_UPDATED_EVENT } from "../utils/wordCounts"
 
 export default function WordCountInput() {
   const [wordCount, setWordCount] = useState("")
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    console.log(Number(wordCount))
+    const submittedWordCount = Number(wordCount)
+    saveWordCount(submittedWordCount)
+    window.dispatchEvent(new Event(WORD_COUNTS_UPDATED_EVENT))
+    console.log(submittedWordCount)
     setWordCount("")
   }
 

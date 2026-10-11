@@ -1,0 +1,42 @@
+.streak {
+  display: flex;
+  max-width: 52rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem auto 0;
+  padding: 1.25rem;
+  border: 1px solid rgba(201, 163, 90, 0.25);
+  border-radius: 0.75rem;
+  background: linear-gradient(145deg, #15243a 0%, #101e31 100%);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.star {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  color: #e8c87a;
+}
+
+.title {
+  margin-bottom: 0.25rem;
+  color: #e8c87a;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.count {
+  color: #e2e8f0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.caption {
+  margin-top: 0.25rem;
+  color: #aebccd;
+  font-size: 0.875rem;
+}
