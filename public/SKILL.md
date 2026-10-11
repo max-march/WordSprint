@@ -1,5 +1,5 @@
 ---
-name: adding-new-features
+name: adding-new-feature
 description: Guide for setting up branches before implementing any new feature or plan. Use this whenever asked to build, add, or implement something new.
 ---
 
