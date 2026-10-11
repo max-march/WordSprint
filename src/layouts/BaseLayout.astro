@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 
 interface Props {
   title?: string;
@@ -22,6 +23,7 @@ const { title = 'WordSprint' } = Astro.props
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
 
@@ -36,10 +38,13 @@ body {
   color: #e2e8f0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
+  flex: 1;
 }
 </style>

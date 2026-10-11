@@ -1,0 +1,61 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="copyright">&copy; {new Date().getFullYear()} WordSprint. All rights reserved.</p>
+    <nav class="social-links" aria-label="Social media">
+      <a href="https://github.com/">GitHub</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://x.com/">X</a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  border-top: 1px solid rgba(201, 163, 90, 0.25);
+  background: linear-gradient(160deg, #0d1b2a 0%, #1a2640 100%);
+  padding: 1.5rem;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.copyright {
+  color: #c8cfe0;
+  font-size: 0.875rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-links a {
+  color: #d4aa65;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  color: #e8c87a;
+}
+
+.social-links a:focus-visible {
+  outline: 2px solid #e8c87a;
+  outline-offset: 4px;
+}
+
+@media (max-width: 520px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
