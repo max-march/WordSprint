@@ -34,3 +34,4 @@ Create a plan for a daily streak feature.It Should be a self-contained component
 /adding-new-feature Can you work on this new feature: create a footer component, with a copyright notice and summy links to socials, and then add it to the bottom of the layout.Style the component to match the rest of the site.
 
 
+MCP Server
